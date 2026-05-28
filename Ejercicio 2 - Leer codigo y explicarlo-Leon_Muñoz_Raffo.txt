@@ -1,0 +1,34 @@
+"Ejercicio 2 - Leer codigo y explicarlo"
+"Este ejercicio no es para programar. Lean el codigo y escriban una explicación de que hace."
+
+linea = " mara ; programacion ; 8 "
+
+partes = linea.split(";")
+nombre = partes[0].strip().capitalize()
+materia = partes[1].strip().capitalize()
+nota_texto = partes[2].strip()
+
+if nota_texto.isnumeric():
+    nota = int(nota_texto)
+    print(f"{nombre} cursa {materia} y obtuvo {nota}")
+else:
+    print("La nota no es valida")
+
+"""Para orientar la explicacion:
+
+¿Que queda guardado en partes?
+¿Por que se usa strip antes de capitalize?
+¿Que dato se esta validando antes de convertirlo?
+¿Que imprimiria el programa si en lugar de 8 viniera ocho?
+
+Explicacion del codigo:
+"linea" es una variable conformada por un dato escrito en texto, teiendo informacion separada por 2(;). Luego crea la variable "partes" 
+usando un split y "linea" convirtiendo cada dato de "linea" separado por (;) en una lista. Lo siguiente que hace es crear tres nuevas 
+variables (nombre, materia, nota_texto) que las define como datos de la lista "partes" seleccionandolo por su indice, elimina sus espacios 
+sobrantes usando strip, y en dos de esas variables (nombre, materia) pone la primera letra de los datos en mayuscula y el 
+resto en minuscula, usando capitalize, esto lo  hace despues de usar el strip poque sino el primer caracter que tomaria capitalize seria 
+ese epacio en blanco y no la letra. Ya terminando, usa "if" para condicionar la respuesta del programa,teniendo como condicion a
+"isnumeric" respecto a "nota_texto". Si la condicion es True el programa define una nueva variable ("nota") la cual es "nota_texto" 
+convertido en un dato int y luego printea (f"{nombre} cursa {materia} y obtuvo {nota}") utilizando las variables que almaceno en el 
+transcurso de ejecucion. en el caso que la condicion de false printea ("La nota no es valida"), ya que si no es un numero en texto no 
+lo considera como una nota numerica, aunque este escrito en letras el numero"""

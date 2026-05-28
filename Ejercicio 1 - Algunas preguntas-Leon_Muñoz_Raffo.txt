@@ -1,0 +1,15 @@
+Ejercicio 1 - Algunas preguntas
+Responder en un archivo de texto plano (.TXT), con sus palabras.
+
+1)¿Porque es importante validar los datos que ingresa un usuario?
+2)¿Que hace strip y en que se diferencia de split?
+3)¿Para que puede servir count cuando una linea tiene datos separados por comas o por punto y coma?
+4)¿Que problema pueden traer los espacios de mas al principio o al final de un dato?
+
+Respuestas:
+1)Es importante validar los datos que ingresa un usuario por seguridad ya que evitamos que ingrese codigo corrupto, tambien impide que el programa no fucione por datos no establecidos y corroboramos que sean correctos
+2)Strip elimina los esspacios iniciales y finales de un texto mientras que split usando el parametro que establecimos separa un texto y lo convierte en una lista
+3)Cuando una linea tiene datos separados por comas o puntos y comas el count nos ayuda a detectar cuantos de ellos hay en dicha linea, y por la tanto sabremos cuantos datos tiene
+4)Los espacios de mas tanto adelante como al final de un dato tienen como problema que ya el programa no detecta 2 datos como iguales aunque quieras que si, por ej: "juan" no es igual a "juan "
+
+Leon Muñoz Raffo 
